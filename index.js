@@ -9,9 +9,7 @@ dotEnv.config()
 const server = express();
 
 
-server.use(cors({
-  origin: '*' 
-}));
+server.use(cors());
 
 
 server.use(express.json());
