@@ -9,7 +9,11 @@ dotEnv.config()
 const server = express();
 
 
-server.use(cors());
+server.use(cors(
+    {
+        origin:["https://study-five-ruby.vercel.app/","http://localhost:3000","http://localhost:5173"]
+    }
+));
 
 
 server.use(express.json());
